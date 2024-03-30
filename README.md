@@ -1,2 +1,1 @@
-# chatapplication
-chat application is made using react 
+# chat_me
