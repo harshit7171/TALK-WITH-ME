@@ -1,23 +1,22 @@
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth, GoogleAuthProvider } from "firebase/auth";
-import { getFirestore } from "@firebase/firestore";
-
+import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDyoJ0kxvAig9J50gr5XXAhJlAUI90_kM4",
-  authDomain: "chatapp-d7144.firebaseapp.com",
-  projectId: "chatapp-d7144",
-  storageBucket: "chatapp-d7144.appspot.com",
-  messagingSenderId: "60848029237",
-  appId: "1:60848029237:web:9c77bfb3956db8970b7b7c"
+  apiKey: "AIzaSyDJSbHob0v4FnUyCLbAvFcO2V2X3HjfjwI",
+  authDomain: "talkwithme-858a1.firebaseapp.com",
+  projectId: "talkwithme-858a1",
+  storageBucket: "talkwithme-858a1.appspot.com",
+  messagingSenderId: "831946870043",
+  appId: "1:831946870043:web:995b1638d370ea27e097be",
+  measurementId: "G-MXG8B0T2L1"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
-export const auth = getAuth(app);
-export const provider =new GoogleAuthProvider();
+const analytics = getAnalytics(app);
